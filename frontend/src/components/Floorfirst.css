@@ -1,0 +1,52 @@
+.floor-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.floor-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.floor-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.floor-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.floor-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1976d2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.floor-info {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.floor-info p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #333;
+} 
