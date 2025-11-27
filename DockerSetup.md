@@ -10,7 +10,7 @@ mongorestore --db room_data_lab42 --archive=database_backup.archive --gzip --dro
 ```
 Please note the database name is `room_data_lab42`.
 
-3. Create the `.env` file under the aiservice
+3. Create the `.env` file under the `aiservice` directory
 ```
 echo "OPENAI_API_KEY=your_key" > .env
 ```
