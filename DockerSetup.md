@@ -9,6 +9,7 @@ git clone git@github.com:DaydreamCreator/Lab42_Visualization.git
 mongorestore --db room_data_lab42 --archive=database_backup.archive --gzip --drop
 ```
 Please note the database name is `room_data_lab42`.
+
 3. Create the `.env` file under the aiservice
 ```
 echo "OPENAI_API_KEY=your_key" > .env
