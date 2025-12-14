@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # MongoDB database
   mongodb:
-    image: mongo:latest
+    image: mongo
     container_name: mongodb
     ports:
       - "27017:27017"
@@ -69,4 +69,5 @@ volumes:
 
 networks:
   app-network:
+
     driver: bridge
