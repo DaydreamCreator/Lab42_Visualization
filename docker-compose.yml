@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  # MongoDB 数据库
+  # MongoDB database
   mongodb:
-    image: mongo:6.0
+    image: mongo:latest
     container_name: mongodb
     restart: unless-stopped
     ports:
@@ -15,6 +15,7 @@ services:
 
   # Flask AI Service
   aiservice:
+    image: flask-image
     build:
       context: ./aiservice
       dockerfile: Dockerfile
@@ -31,6 +32,7 @@ services:
 
   # SpringBoot Backend
   backend:
+    image: backend-image
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -49,6 +51,7 @@ services:
 
   # React Frontend
   frontend:
+    image: frontend-image
     build:
       context: ./frontend
       dockerfile: Dockerfile
