@@ -10,9 +10,9 @@ mongorestore --db room_data_lab42 --archive=database_backup.archive --gzip --dro
 ```
 Please note the database name is `room_data_lab42`.
 
-3. Create the `.env` file under the `aiservice` directory
+3. Create the `.env` file under the `aiservice` directory and set with UTF-8 format
 ```
-echo "OPENAI_API_KEY=your_key" > .env
+echo "OPENAI_API_KEY=your_key" | Out-File -Encoding UTF8 aiservice\.env 
 ```
 
 4. Start build and launch all services
