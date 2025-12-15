@@ -13,7 +13,7 @@ docker load -i app-images.tar
 ```
 3. Put the `database_backup.archive` databse to `database` directory, AND create the `.env` file under the `aiservice` directory and set with UTF-8 format
 ```
-echo OPENAI_API_KEY=your_key | Out-File -Encoding UTF8 aiservice\.env 
+echo OPENAI_API_KEY=your_key | Out-File -Encoding UTF8 aiservice/.env 
 ```
 4. Start and launch all services 
 ```
@@ -29,7 +29,7 @@ git clone git@github.com:DaydreamCreator/Lab42_Visualization.git
 ```
 2. Put the `database_backup.archive` databse to `database` directory, AND create the `.env` file under the `aiservice` directory and set with UTF-8 format
 ```
-echo OPENAI_API_KEY=your_key > aiservice\.env
+echo OPENAI_API_KEY=your_key > aiservice/.env
 ```
 3. Start and launch all services
 ```
