@@ -2,12 +2,12 @@
 - [Docker](https://www.docker.com/products/docker-desktop/) Installed
 
 
-## Initial setup with packed images (with Docker installed and started)
-1. Clone the repo
+## Option 1: Initial setup with packed images (with Docker installed and started)
+1. Clone the repo.
 ```
 git clone git@github.com:DaydreamCreator/Lab42_Visualization.git
 ```
-2. Load the packed images(frontend, backend, aiservice)
+2. Load the packed image, with put the images under the root directory.
 ```
 docker load -i app-images.tar
 ```
@@ -15,12 +15,27 @@ docker load -i app-images.tar
 ```
 echo OPENAI_API_KEY=your_key | Out-File -Encoding UTF8 aiservice\.env 
 ```
-4. Start and launch all services (Initially will download mongodb image)
+4. Start and launch all services 
 ```
 docker-compose up
 ```
 5. Explore the application at http://localhost/.
 
+
+## Option 2: Initial setup with Docker images downloaded
+1. Clone the repo.
+```
+git clone git@github.com:DaydreamCreator/Lab42_Visualization.git
+```
+2. Put the `database_backup.archive` databse to `database` directory, AND create the `.env` file under the `aiservice` directory and set with UTF-8 format
+```
+echo OPENAI_API_KEY=your_key > aiservice\.env
+```
+3. Start and launch all services
+```
+docker-compose up build
+```
+4. Explore the application at http://localhost/.
 ## Other commands
 
 ### Show the running status
